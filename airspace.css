@@ -242,27 +242,36 @@ form {
   }
 }
 
+/* Base styles for images */
+.containermain img {
+  max-width: 100px; /* Controls the image width on all screens */
+  height: auto;
+}
+
+/* Mobile responsive styles */
 @media (max-width: 576px) {
-  /* Further adjustments for very small screens */
+  /* Adjust top and bottom margins on mobile */
   .containermain {
-      padding: 0.5rem;
+      margin-top: 527px;
+      margin-bottom: 20px;
+  }
+  
+  /* Stack images vertically with proper spacing on mobile */
+  .containermain .col-4 {
+      margin-bottom: 10px;
+  }
+  
+  /* Center text on smaller screens */
+  .containermain h4, .containermain p {
       text-align: center;
   }
 
-  .containermain h4 {
-      font-size: 1rem;
-      line-height: 1.3;
-  }
-
-  /* Adjust images and text */
-  .containermain .row img {
-      max-width: 50px;
-  }
-
-  .containermain p {
-      font-size: 0.9rem;
+  /* Remove border on mobile for a cleaner look */
+  .containermain .border-end {
+      border: none;
   }
 }
+
 
 .container-4{
     width:98%;
